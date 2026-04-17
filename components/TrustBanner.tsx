@@ -17,7 +17,7 @@ export default function TrustBanner() {
           <RefreshCcw strokeWidth={1.5} className="w-8 h-8 text-primary" />
           <div>
             <h4 className="font-bold text-primary tracking-wide text-sm uppercase mb-1">30-Day Risk Free</h4>
-            <p className="text-sm font-medium">Try it at home. Free returns if you don&apos;t love it.</p>
+            <p className="...">Try it at home. Free returns if you don&apos;t love it.</p>
           </div>
         </div>
 
