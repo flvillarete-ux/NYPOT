@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+// Delete this line entirely:
 // @ts-expect-error - bypass css import error
 import "./globals.css";
 import clsx from "clsx";
