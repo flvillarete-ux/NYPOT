@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-// @ts-expect-error
+// @ts-expect-error - CSS side-effect import
 import "./globals.css";
 import clsx from "clsx";
 import Navigation from "@/components/Navigation";
