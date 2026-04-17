@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-canvas: 255 255 255; /* #FFFFFF */
+    --bg-warm: 245 245 220; /* #F5F5DC */
+    --text-primary: 26 26 26; /* #1A1A1A */
+    --text-secondary: 74 74 74; /* #4A4A4A */
+    --accent-terracotta: 224 122 95; /* #e07a5f */
+  }
+
+  /* Minimal aesthetic setup */
+  body {
+    background-color: rgb(var(--bg-canvas));
+    color: rgb(var(--text-primary));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* letter-spacing: -0.02em; => doing this in layout or tailwind classes */
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-gradient-scrolly {
+    /* Seamless transition gradient from #D3D3D3 to #F5F5DC */
+    background: linear-gradient(to bottom, rgb(var(--bg-canvas)) 0%, rgb(var(--bg-canvas)) 25%, rgb(var(--bg-warm)) 100%);
+  }
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--text-secondary), 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--text-secondary), 0.6);
+}
