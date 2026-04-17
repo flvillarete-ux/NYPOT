@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-// @ts-ignore
+// @ts-expect-error
 import "./globals.css";
 import clsx from "clsx";
 import Navigation from "@/components/Navigation";

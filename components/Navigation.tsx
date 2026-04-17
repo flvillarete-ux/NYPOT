@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Navigation() {
   return (
     <header className="w-full fixed top-0 z-50 bg-white/80 backdrop-blur-md border-b border-black/5">

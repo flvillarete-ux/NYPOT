@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import ProductCanvas from "@/components/ProductCanvas";
 import Testimonials from "@/components/Testimonials";
 import TrustBanner from "@/components/TrustBanner";
-import { ArrowDown, CheckCircle2, Star, StarHalf } from "lucide-react";
+import { ArrowDown, CheckCircle2,} from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
